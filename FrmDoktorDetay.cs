@@ -16,6 +16,10 @@ namespace Proje_Hastane
         {
             InitializeComponent();
         }
-
+       
+        private void FrmDoktorDetay_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

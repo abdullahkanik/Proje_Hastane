@@ -48,7 +48,7 @@
             this.TxtSifre.Location = new System.Drawing.Point(258, 310);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(154, 31);
-            this.TxtSifre.TabIndex = 33;
+            this.TxtSifre.TabIndex = 6;
             // 
             // label4
             // 
@@ -66,7 +66,7 @@
             this.BtnKayitYap.Name = "BtnKayitYap";
             this.BtnKayitYap.Size = new System.Drawing.Size(124, 42);
             this.BtnKayitYap.TabIndex = 31;
-            this.BtnKayitYap.Text = "Kayıt Yap";
+            this.BtnKayitYap.Text = "Güncelle";
             this.BtnKayitYap.UseVisualStyleBackColor = false;
             // 
             // CmbCinsiyet
@@ -78,7 +78,7 @@
             this.CmbCinsiyet.Location = new System.Drawing.Point(258, 264);
             this.CmbCinsiyet.Name = "CmbCinsiyet";
             this.CmbCinsiyet.Size = new System.Drawing.Size(121, 31);
-            this.CmbCinsiyet.TabIndex = 30;
+            this.CmbCinsiyet.TabIndex = 5;
             // 
             // MskTelefon
             // 
@@ -86,7 +86,7 @@
             this.MskTelefon.Mask = "(999) 000-0000";
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(154, 31);
-            this.MskTelefon.TabIndex = 29;
+            this.MskTelefon.TabIndex = 4;
             // 
             // label6
             // 
@@ -102,7 +102,7 @@
             this.TxtAd.Location = new System.Drawing.Point(258, 64);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(154, 31);
-            this.TxtAd.TabIndex = 27;
+            this.TxtAd.TabIndex = 1;
             // 
             // label5
             // 
@@ -127,7 +127,7 @@
             this.TxtSoyad.Location = new System.Drawing.Point(258, 109);
             this.TxtSoyad.Name = "TxtSoyad";
             this.TxtSoyad.Size = new System.Drawing.Size(154, 31);
-            this.TxtSoyad.TabIndex = 24;
+            this.TxtSoyad.TabIndex = 2;
             // 
             // MskTC
             // 
@@ -135,7 +135,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(154, 31);
-            this.MskTC.TabIndex = 23;
+            this.MskTC.TabIndex = 3;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // label3
@@ -158,6 +158,7 @@
             // 
             // FrmBilgiDuzenle
             // 
+            this.AcceptButton = this.BtnKayitYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -179,6 +180,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmBilgiDuzenle";
             this.Text = "FrmBilgiDuzenle";
+            this.Load += new System.EventHandler(this.FrmBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
