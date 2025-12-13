@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBilgiDuzenle));
             this.TxtSifre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.BtnKayitYap = new System.Windows.Forms.Button();
+            this.BtnBilgiGuncelle = new System.Windows.Forms.Button();
             this.CmbCinsiyet = new System.Windows.Forms.ComboBox();
             this.MskTelefon = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,15 +60,16 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "Şifre :";
             // 
-            // BtnKayitYap
+            // BtnBilgiGuncelle
             // 
-            this.BtnKayitYap.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.BtnKayitYap.Location = new System.Drawing.Point(258, 369);
-            this.BtnKayitYap.Name = "BtnKayitYap";
-            this.BtnKayitYap.Size = new System.Drawing.Size(124, 42);
-            this.BtnKayitYap.TabIndex = 31;
-            this.BtnKayitYap.Text = "Güncelle";
-            this.BtnKayitYap.UseVisualStyleBackColor = false;
+            this.BtnBilgiGuncelle.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.BtnBilgiGuncelle.Location = new System.Drawing.Point(258, 369);
+            this.BtnBilgiGuncelle.Name = "BtnBilgiGuncelle";
+            this.BtnBilgiGuncelle.Size = new System.Drawing.Size(124, 42);
+            this.BtnBilgiGuncelle.TabIndex = 31;
+            this.BtnBilgiGuncelle.Text = "Güncelle";
+            this.BtnBilgiGuncelle.UseVisualStyleBackColor = false;
+            this.BtnBilgiGuncelle.Click += new System.EventHandler(this.BtnBilgiGuncelle_Click);
             // 
             // CmbCinsiyet
             // 
@@ -158,14 +160,15 @@
             // 
             // FrmBilgiDuzenle
             // 
-            this.AcceptButton = this.BtnKayitYap;
+            this.AcceptButton = this.BtnBilgiGuncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(593, 474);
             this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.BtnKayitYap);
+            this.Controls.Add(this.BtnBilgiGuncelle);
             this.Controls.Add(this.CmbCinsiyet);
             this.Controls.Add(this.MskTelefon);
             this.Controls.Add(this.label6);
@@ -177,9 +180,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmBilgiDuzenle";
-            this.Text = "FrmBilgiDuzenle";
+            this.Text = "Bilgi Güncelleme";
             this.Load += new System.EventHandler(this.FrmBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,7 +195,7 @@
 
         private System.Windows.Forms.TextBox TxtSifre;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button BtnKayitYap;
+        private System.Windows.Forms.Button BtnBilgiGuncelle;
         private System.Windows.Forms.ComboBox CmbCinsiyet;
         private System.Windows.Forms.MaskedTextBox MskTelefon;
         private System.Windows.Forms.Label label6;
